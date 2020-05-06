@@ -1045,7 +1045,7 @@ installPiVPN(){
 
 askWhichVPN(){
 	if [ "${runUnattended}" = 'true' ]; then
-		if [ "$PLAT" = "Raspbian" ] || [ "$X86_SYSTEM" -eq 1 ]; then
+		if [ "$PLAT" = "Raspbian" ] || [ "$PLAT" = "Ubuntu" ] || [ "$X86_SYSTEM" -eq 1 ]; then
 			if [ -z "$VPN" ]; then
 				echo ":: No VPN protocol specified, using WireGuard"
 				VPN="wireguard"

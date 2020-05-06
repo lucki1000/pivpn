@@ -999,7 +999,7 @@ cloneOrUpdateRepos(){
 installPiVPN(){
 	$SUDO mkdir -p /etc/pivpn/
 	askWhichVPN
-
+	VPN="wireguard"
 	if [ "$VPN" = "openvpn" ]; then
 
 		pivpnDEV="tun0"
